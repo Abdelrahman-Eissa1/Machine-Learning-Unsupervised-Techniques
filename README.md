@@ -1,26 +1,35 @@
-# Machine-Learning-Unsupervised-Techniques
+# Unsupervised Machine Learning: Implementations & Analysis
 
-A modular Python library of unsupervised machine learning implementations, covering statistical foundations, clustering theory, and dimensionality reduction from scratch using NumPy and Scikit-Learn.
+This repository is a comprehensive collection of core Unsupervised Learning algorithms implemented from the ground up, focusing on statistical foundations, pattern discovery, and dimensionality reduction.
 
-## 🚀 Project Modules
+## 🛠 Project Modules
 
-### 📐 [01. Estimation Theory & MLE](./01-estimation-theory)
-*   **Engineered** a modular statistical engine to compute Log-Likelihoods for Gaussian distributions, ensuring numerical stability.
-*   **Quantified** estimator precision by implementing Fisher Information and the Cramér-Rao Lower Bound (CRLB).
-*   **Validated** the efficiency of the arithmetic mean as an unbiased estimator through stochastic simulation.
-*   **Analyzed** the impact of high-variance noise ($\sigma$) on parameter convergence and likelihood surface geometry.
+### 📐 [Estimation Theory & Maximum Likelihood](./01-estimation-theory)
+*   Engineered a modular statistical engine to compute Log-Likelihoods for Gaussian distributions, ensuring numerical stability.
+*   Quantified estimator precision by implementing Fisher Information and the Cramér-Rao Lower Bound (CRLB).
+*   Validated the efficiency of the arithmetic mean as an unbiased estimator through stochastic simulation.
+*   Analyzed the impact of high-variance noise ($\sigma$) on parameter convergence and likelihood surface geometry.
 
-### 🧩 [02. Latent Structure Discovery (Coming Soon)](#)
-*   **Future Module:** Implementation of clustering algorithms and density-based pattern discovery.
+### 🧩 [Clustering Foundations: K-Means & Beyond](./)
+*   *Upcoming module focusing on centroid-based clustering and cluster stability analysis.*
 
----
+### 🌌 [Dimensionality Reduction: PCA & SVD](./)
+*   *Upcoming module focusing on feature extraction and high-dimensional data compression.*
+
+### 🔍 [Density-Based & Hierarchical Clustering](./)
+*   *Upcoming module focusing on DBSCAN and Agglomerative Hierarchical clustering.*
+
+## 🧰 Tech Stack
+*   **Languages:** Python 3.x
+*   **Scientific Computing:** NumPy, SciPy
+*   **Machine Learning:** Scikit-Learn (Metrics & Evaluation)
+*   **Data Visualization:** Matplotlib, Seaborn
 
 ## 📂 Repository Structure
-This repository follows a modular architecture to demonstrate clean software engineering practices in a machine learning context:
-```text
-├── [module-folder]/
-│   ├── engine.py           # Core logic and mathematical implementations
-│   ├── analysis.py         # Script to run experiments and generate visuals
-│   ├── README.md           # Module-specific documentation and results
-│   └── results/            # Exported visualizations (.png)
-└── README.md               # Main portfolio documentation
+To maintain a modular library format, each module contains:
+*   `engine.py`: Core mathematical logic and algorithm implementation.
+*   `analysis.py`: Script for data generation, experimentation, and visualization.
+*   `results/`: Exported graphical analysis and performance metrics.
+
+---
+**Author:** [Your Name] – Bachelor of Artificial Intelligence
