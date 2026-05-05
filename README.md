@@ -35,4 +35,4 @@ To maintain a modular library format, each module contains:
 *   `results/`: Exported graphical analysis and performance metrics.
 
 ---
-**Author:** [Your Name] – Bachelor of Artificial Intelligence
+**Author:** Abdelrahman Eissa – Bachelor of Artificial Intelligence
