@@ -16,11 +16,11 @@ A modular Python library of unsupervised machine learning implementations, cover
 *   **Benchmarked** analytical solutions against numerical grid-search optimization to verify mathematical convergence.
 *   **Visualized** concave log-likelihood surfaces to identify global maxima and estimator sensitivity.
 
-### 🌌 [Principal Component Analysis (PCA)](./principal-component-analysis)
-*   **Architected** a dimensionality reduction pipeline from scratch using Eigendecomposition of the covariance matrix.
-*   **Optimized** high-dimensional feature spaces by selecting principal components based on Explained Variance ratios.
-*   **Benchmarked** manual implementations against Scikit-Learn to verify mathematical convergence and projection accuracy.
-*   **Visualized** latent structures in the Iris dataset, reducing 4D feature vectors to a 2D subspace with 95.8% variance preservation.
+### 🖼️ [PCA Compression & Kernel Manifolds](./pca-kernel-compression)
+*   **Engineered** an image compression-reconstruction pipeline from scratch, achieving significant dimensionality reduction on facial datasets.
+*   **Derived** the mathematical proof for the positive semi-definiteness of covariance matrices and the necessity of non-negative eigenvalues.
+*   **Implemented** Kernel PCA (RBF & Polynomial) to resolve non-linear manifolds and achieve linear class separation in 1D projections.
+*   **Benchmarked** explained variance thresholds against reconstruction fidelity to quantify the information-loss trade-off.
 
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
