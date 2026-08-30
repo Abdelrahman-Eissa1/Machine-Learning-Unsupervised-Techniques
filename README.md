@@ -26,22 +26,6 @@ A modular Python library of unsupervised machine learning implementations, cover
 *   **The Kernel Trick:** Implemented **Kernel PCA** (RBF & Polynomial) to resolve non-linear manifolds. Successfully "unrolled" concentric circular data into a linearly separable 1D space.
 *   **Mathematical Proofs:** Mathematically proved that the covariance matrix $C = \frac{1}{n}X^TX$ is **Positive Semi-Definite**, ensuring non-negative eigenvalues ($\lambda \ge 0$) and a physically meaningful ranking of components.
 
----
-
-## 📊 Visual Highlights (Assignment 4)
-
-### Facial Reconstruction Fidelity
-*Comparing original images against reconstructions at 50%, 75%, and 99% explained variance using the `faces94` dataset.*
-
-![Faces Reconstruction](./pca-kernel-compression/results/faces_reconstruction.png)
-
-### Resolving Non-Linear Manifolds
-*Demonstrating how Standard PCA fails to separate concentric circular structures, while Kernel PCA (RBF) achieves perfect linear separation.*
-
-![Manifold Separation](./pca-kernel-compression/results/manifold_separation.png)
-
----
-
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy, Pandas
