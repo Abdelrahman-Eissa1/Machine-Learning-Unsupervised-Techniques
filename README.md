@@ -24,6 +24,12 @@ A modular Python library of unsupervised machine learning implementations, cover
 *   **Blind Source Separation:** Solved the **"Cocktail Party Problem"** by recovering independent audio sources from linear mixtures.
 *   **Localized Feature Discovery:** Proved that ICA extracts edge-filters from images (CIFAR-10) while PCA extracts holistic structures.
 
+### 🧬 [6. Factor Analysis (Generative Optimization)](./factor-analysis)
+*   **Engineered** a Factor Analysis model comparing **Gradient Descent** vs. **Expectation Maximization (EM)**.
+*   **Mathematically Derived** matrix gradients for the Negative Log-Likelihood (NLL) function.
+*   **Optimized Performance** using the **Matrix Inversion Lemma**, enabling efficient computation in high-dimensional feature spaces.
+*   **Benchmarked Convergence** to prove that EM provides superior stability and speed in latent variable estimation compared to first-order GD.
+
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
 *   **Scientific Computing:** NumPy, SciPy, Pandas
