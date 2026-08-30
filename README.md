@@ -29,9 +29,8 @@ A modular Python library of unsupervised machine learning implementations, cover
 *   **Optimized Performance** using the **Matrix Inversion Lemma (Woodbury Identity)** for high-dimensional efficiency.
 
 ### 🌀 [7. Manifold Learning (t-SNE from Scratch)](./manifold-learning)
-*   **Scratch t-SNE:** Engineered a full t-SNE pipeline including binary search for perplexity and Student-t kernels.
-*   **Comprehensive Benchmarking:** Compared **PCA, ICA, MDS, Isomap, LLE, and t-SNE** on real-world chemical data (Wine dataset).
-*   **Manifold Preservation:** Demonstrated the superiority of non-linear techniques in resolving the "Crowding Problem" for high-dimensional cluster separation.
+*   **Engineered** a t-SNE pipeline from scratch, implementing automated binary search for perplexity calibration and heavy-tailed Student-t kernels.
+*   **Benchmarked** six dimensionality reduction algorithms (PCA, ICA, MDS, Isomap, LLE, t-SNE) to demonstrate non-linear manifold preservation and resolve the "Crowding Problem."
 
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
@@ -43,7 +42,7 @@ A modular Python library of unsupervised machine learning implementations, cover
 To maintain a professional library format, each module is organized as follows:
 *   `engine.py`: Core mathematical logic, class wrappers, and algorithm implementation.
 *   `analysis.py`: Script for data generation, experimentation, and visualization.
-*   `results/`: Exported graphical analysis (PNGs) and performance metrics.
+*   `results/`: Exported graphical analysis and performance metrics.
 
 ---
 **Author:** Abdelrahman Eissa – Bachelor of Artificial Intelligence
