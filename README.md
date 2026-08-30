@@ -26,9 +26,12 @@ A modular Python library of unsupervised machine learning implementations, cover
 
 ### 🧬 [6. Factor Analysis (Generative Optimization)](./factor-analysis)
 *   **Engineered** a Factor Analysis model comparing **Gradient Descent** vs. **Expectation Maximization (EM)**.
-*   **Mathematically Derived** matrix gradients for the Negative Log-Likelihood (NLL) function.
-*   **Optimized Performance** using the **Matrix Inversion Lemma**, enabling efficient computation in high-dimensional feature spaces.
-*   **Benchmarked Convergence** to prove that EM provides superior stability and speed in latent variable estimation compared to first-order GD.
+*   **Optimized Performance** using the **Matrix Inversion Lemma (Woodbury Identity)** for high-dimensional efficiency.
+
+### 🌀 [7. Manifold Learning (t-SNE from Scratch)](./manifold-learning)
+*   **Scratch t-SNE:** Engineered a full t-SNE pipeline including binary search for perplexity and Student-t kernels.
+*   **Comprehensive Benchmarking:** Compared **PCA, ICA, MDS, Isomap, LLE, and t-SNE** on real-world chemical data (Wine dataset).
+*   **Manifold Preservation:** Demonstrated the superiority of non-linear techniques in resolving the "Crowding Problem" for high-dimensional cluster separation.
 
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
@@ -40,7 +43,7 @@ A modular Python library of unsupervised machine learning implementations, cover
 To maintain a professional library format, each module is organized as follows:
 *   `engine.py`: Core mathematical logic, class wrappers, and algorithm implementation.
 *   `analysis.py`: Script for data generation, experimentation, and visualization.
-*   `results/`: Exported graphical analysis and performance metrics.
+*   `results/`: Exported graphical analysis (PNGs) and performance metrics.
 
 ---
 **Author:** Abdelrahman Eissa – Bachelor of Artificial Intelligence
