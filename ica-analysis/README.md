@@ -27,11 +27,11 @@ Using the **FastICA** algorithm, we successfully separated these interleaved sig
 ## 📊 Visual Results
 
 ### 1. PCA vs ICA Components
-![PCA vs ICA CIFAR](./visuals/cifar_pca_vs_ica.png)
+![PCA vs ICA CIFAR](./results/cifar_pca_vs_ica.png)
 *Top: PCA holistic blobs. Bottom: ICA localized edge filters.*
 
 ### 2. Audio Source Recovery
-![Audio Waveforms](./visuals/cocktail_party_recovery.png)
+![Audio Waveforms](./results/cocktail_party_recovery.png)
 *Comparison between the original source, the messy mixture, and the cleaned ICA recovery.*
 
 ---
