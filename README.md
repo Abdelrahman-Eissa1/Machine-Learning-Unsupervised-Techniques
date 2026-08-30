@@ -1,26 +1,46 @@
 # Machine-Learning-Unsupervised-Techniques
 
-A modular Python library of unsupervised machine learning implementations, covering statistical foundations, clustering theory, and dimensionality reduction from scratch using NumPy and Scikit-Learn.
+A modular Python library of unsupervised machine learning implementations, covering statistical foundations, clustering theory, and dimensionality reduction from scratch using NumPy and Scikit-Learn. Based on the curriculum by Sepp Hochreiter.
 
 ## 🛠 Project Modules
 
-### 📐 [Estimation Theory & Maximum Likelihood](./estimation-theory)
+### 📐 [1. Estimation Theory & Maximum Likelihood](./estimation-theory)
 *   **Engineered** a modular statistical engine to compute Log-Likelihoods for Gaussian distributions, ensuring numerical stability.
 *   **Quantified** estimator precision by implementing Fisher Information and the Cramér-Rao Lower Bound (CRLB).
 *   **Validated** the efficiency of the arithmetic mean as an unbiased estimator through stochastic simulation.
 *   **Analyzed** the impact of high-variance noise ($\sigma$) on parameter convergence and likelihood surface geometry.
 
-### 📈 [Poisson Likelihood Optimization](./poisson-likelihood-analysis)
+### 📈 [2. Poisson Likelihood Optimization](./poisson-likelihood-analysis)
 *   **Derived** the analytical Maximum Likelihood Estimator (MLE) for Poisson-distributed stochastic processes.
 *   **Implemented** a numerically stable log-likelihood function using log-factorial approximations for discrete distributions.
 *   **Benchmarked** analytical solutions against numerical grid-search optimization to verify mathematical convergence.
 *   **Visualized** concave log-likelihood surfaces to identify global maxima and estimator sensitivity.
 
-### 🖼️ [PCA Compression & Kernel Manifolds](./pca-kernel-compression)
-*   **Engineered** an image compression-reconstruction pipeline from scratch, achieving significant dimensionality reduction on facial datasets.
-*   **Derived** the mathematical proof for the positive semi-definiteness of covariance matrices and the necessity of non-negative eigenvalues.
-*   **Implemented** Kernel PCA (RBF & Polynomial) to resolve non-linear manifolds and achieve linear class separation in 1D projections.
-*   **Benchmarked** explained variance thresholds against reconstruction fidelity to quantify the information-loss trade-off.
+### 🧬 [3. Principal Component Analysis](./principal-component-analysis)
+*   **Deconstructed** high-dimensional datasets into orthogonal principal components using Eigen-decomposition and SVD.
+*   **Demonstrated** linear separation and feature importance ranking on multivariate datasets (Iris).
+*   **Visualized** variance distribution across components to identify optimal dimensionality reduction thresholds.
+
+### 🖼️ [4. PCA Compression & Kernel Manifolds](./pca-kernel-compression)
+*   **Eigenface Pipeline:** Engineered an image compression-reconstruction pipeline from scratch. Demonstrated how 50% variance captures global structure (lighting/head shape) while 99% variance captures high-fidelity details (glasses/textures).
+*   **The Kernel Trick:** Implemented **Kernel PCA** (RBF & Polynomial) to resolve non-linear manifolds. Successfully "unrolled" concentric circular data into a linearly separable 1D space.
+*   **Mathematical Proofs:** Mathematically proved that the covariance matrix $C = \frac{1}{n}X^TX$ is **Positive Semi-Definite**, ensuring non-negative eigenvalues ($\lambda \ge 0$) and a physically meaningful ranking of components.
+
+---
+
+## 📊 Visual Highlights (Assignment 4)
+
+### Facial Reconstruction Fidelity
+*Comparing original images against reconstructions at 50%, 75%, and 99% explained variance using the `faces94` dataset.*
+
+![Faces Reconstruction](./pca-kernel-compression/results/faces_reconstruction.png)
+
+### Resolving Non-Linear Manifolds
+*Demonstrating how Standard PCA fails to separate concentric circular structures, while Kernel PCA (RBF) achieves perfect linear separation.*
+
+![Manifold Separation](./pca-kernel-compression/results/manifold_separation.png)
+
+---
 
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
@@ -29,10 +49,10 @@ A modular Python library of unsupervised machine learning implementations, cover
 *   **Data Visualization:** Matplotlib, Seaborn
 
 ## 📂 Repository Structure
-To maintain a modular library format, each module contains:
-*   `engine.py`: Core mathematical logic and algorithm implementation.
+To maintain a professional library format, each module is organized as follows:
+*   `engine.py`: Core mathematical logic, class wrappers, and algorithm implementation.
 *   `analysis.py`: Script for data generation, experimentation, and visualization.
-*   `results/`: Exported graphical analysis and performance metrics.
+*   `results/`: Exported graphical analysis (PNGs) and performance metrics.
 
 ---
 **Author:** Abdelrahman Eissa – Bachelor of Artificial Intelligence
