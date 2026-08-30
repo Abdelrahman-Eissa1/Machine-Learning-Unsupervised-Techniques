@@ -5,26 +5,24 @@ A modular Python library of unsupervised machine learning implementations, cover
 ## 🛠 Project Modules
 
 ### 📐 [1. Estimation Theory & Maximum Likelihood](./estimation-theory)
-*   **Engineered** a modular statistical engine to compute Log-Likelihoods for Gaussian distributions, ensuring numerical stability.
-*   **Quantified** estimator precision by implementing Fisher Information and the Cramér-Rao Lower Bound (CRLB).
-*   **Validated** the efficiency of the arithmetic mean as an unbiased estimator through stochastic simulation.
-*   **Analyzed** the impact of high-variance noise ($\sigma$) on parameter convergence and likelihood surface geometry.
+*   **Engineered** a modular statistical engine to compute Log-Likelihoods for Gaussian distributions.
+*   **Quantified** estimator precision via Fisher Information and the Cramér-Rao Lower Bound (CRLB).
 
 ### 📈 [2. Poisson Likelihood Optimization](./poisson-likelihood-analysis)
-*   **Derived** the analytical Maximum Likelihood Estimator (MLE) for Poisson-distributed stochastic processes.
-*   **Implemented** a numerically stable log-likelihood function using log-factorial approximations for discrete distributions.
-*   **Benchmarked** analytical solutions against numerical grid-search optimization to verify mathematical convergence.
-*   **Visualized** concave log-likelihood surfaces to identify global maxima and estimator sensitivity.
+*   **Derived** analytical Maximum Likelihood Estimators (MLE) for Poisson-distributed stochastic processes.
+*   **Visualized** concave log-likelihood surfaces to identify global maxima.
 
 ### 🧬 [3. Principal Component Analysis](./principal-component-analysis)
-*   **Deconstructed** high-dimensional datasets into orthogonal principal components using Eigen-decomposition and SVD.
-*   **Demonstrated** linear separation and feature importance ranking on multivariate datasets (Iris).
-*   **Visualized** variance distribution across components to identify optimal dimensionality reduction thresholds.
+*   **Deconstructed** high-dimensional datasets into orthogonal principal components using SVD.
+*   **Demonstrated** feature importance ranking on multivariate datasets (Iris).
 
 ### 🖼️ [4. PCA Compression & Kernel Manifolds](./pca-kernel-compression)
-*   **Eigenface Pipeline:** Engineered an image compression-reconstruction pipeline from scratch. Demonstrated how 50% variance captures global structure (lighting/head shape) while 99% variance captures high-fidelity details (glasses/textures).
-*   **The Kernel Trick:** Implemented **Kernel PCA** (RBF & Polynomial) to resolve non-linear manifolds. Successfully "unrolled" concentric circular data into a linearly separable 1D space.
-*   **Mathematical Proofs:** Mathematically proved that the covariance matrix $C = \frac{1}{n}X^TX$ is **Positive Semi-Definite**, ensuring non-negative eigenvalues ($\lambda \ge 0$) and a physically meaningful ranking of components.
+*   **Eigenface Pipeline:** Built an image compression-reconstruction pipeline from scratch.
+*   **The Kernel Trick:** Implemented **Kernel PCA** (RBF) to resolve non-linear manifolds.
+
+### 🎤 [5. Independent Component Analysis (ICA)](./ica-analysis)
+*   **Blind Source Separation:** Solved the **"Cocktail Party Problem"** by recovering independent audio sources from linear mixtures.
+*   **Localized Feature Discovery:** Proved that ICA extracts edge-filters from images (CIFAR-10) while PCA extracts holistic structures.
 
 ## 🧰 Tech Stack
 *   **Languages:** Python 3.x
@@ -36,7 +34,7 @@ A modular Python library of unsupervised machine learning implementations, cover
 To maintain a professional library format, each module is organized as follows:
 *   `engine.py`: Core mathematical logic, class wrappers, and algorithm implementation.
 *   `analysis.py`: Script for data generation, experimentation, and visualization.
-*   `results/`: Exported graphical analysis (PNGs) and performance metrics.
+*   `results/`: Exported graphical analysis and performance metrics.
 
 ---
 **Author:** Abdelrahman Eissa – Bachelor of Artificial Intelligence
